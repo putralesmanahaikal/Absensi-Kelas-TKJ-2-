@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absensi Kelas</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<h1>📊 Absensi Kelas</h1>
+
+<div class="topbar">
+<input placeholder="Nama Kelas">
+
+<select id="bulan"></select>
+<select id="pilihSiswa"></select>
+
+</div>
+
+<div style="overflow:auto">
+<table>
+<thead>
+<tr id="headerRow">
+<th>No</th><th>Nama</th>
+</tr>
+</thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+
+<div class="flex">
+
+<div class="chart-box">
+<h3>📊 Grafik</h3>
+<canvas id="chart"></canvas>
+<h3>🧠 Insight</h3>
+<p id="insight">-</p>
+</div>
+
+<div class="chart-box">
+<h3>🏆 Ranking</h3>
+<p id="insightRanking">-</p>
+<ol id="ranking"></ol>
+<canvas id="rankChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
